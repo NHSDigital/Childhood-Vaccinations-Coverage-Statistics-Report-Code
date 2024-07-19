@@ -1,0 +1,12 @@
+SELECT [FinancialYearStart]
+      ,[Parent_Org_Code]
+      ,[Org_Code]
+      ,[Org_Name]
+      ,[Org_Type]
+      ,[Child_Age]
+      ,[Vac_Type]
+      ,[Data_Type]
+      ,[Number_Population]
+      ,[Number_Vaccinated]
+FROM [<Database>].[dbo].[<Table>]
+WHERE [FinancialYearStart] in ('<YearRange>') and [Data_Type] in ('Actual')
